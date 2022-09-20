@@ -1,29 +1,26 @@
-# Twitter-Data-Analysis
+# Data Warehouse for UAV Traffic Data
+Data is like the new oil, it keeps growing and the demand for it is also growing. Machine learning and AI need more data to improve their accuracy. Quality of data and amount of data are essential to creating ai project, hence it's essential to focus on the data structures to store these data. It's like creating a home for your massive data.
 
-### So here are the bare minimum requirement for completing this task
+For this project, we focus on creating a data warehouse specifically for traffic data collected from drones by Pneuma.(https://open-traffic.epfl.ch/index.php/downloads/#1599047632450-ebe509c8-1330). The data downloaded is a CSV file. Every data instance; i.e one location, in a specific date, at a 30min interval, is approximately 
 
-1. Use this template to create a repository called Twitter-Data-Analysis in your github account. See ["Creating a repository from a template."](https://docs.github.com/en/articles/creating-a-repository-from-a-template) for more information.
-2. [Download](https://drive.google.com/drive/folders/19G8dmehf9vU0u6VTKGV-yWsQOn3IvPsd) and extract the necessary data and put it in the data directory. The data should not not be added to git tracking.
-3. Create a branch called “bugfix” to fix the bugs in the fix_clean_tweets_dataframe.py and fix_extract_dataframe.py 
-4. In branch “bugfix” use the git mv command to rename fix_clean_tweets_dataframe.py to clean_tweets_dataframe.py and fix_extract_dataframe.py  to extract_dataframe.py 
-5. Fix the bugs on clean_tweets_dataframe.py and extract_dataframe.py 
-6. Multiple times, push the code you are working on to git, and once the fix is complete, merge the fix_bug branch to main branch
-7. Create a new branch called “testing” for updating the unit tests in the test/ folder to be applicable to the code you fixed. 
-    a. Build your unit and integration tests to run on small data (< 1 MB) that you copied from what is provided - avoid pushing large data to github
-    b. Think about the key elements (units can be functions, classes, or modules; multiple of them working together to accomplish a task requires integration testing) of the code base you are working on. Write the following
-      - Unit tests: for individual key functions and classes
-      - Integration tests: for the integration of multiple units working together
-8. After completing the unit and integration tests, merge  the “testing” branch with the main branch
-9. In all cases when you merge, make sure you first do Pull Request, review, then accept the merge.
-10. Use github actions in your repository such that when you git push new code (or merge a branch) to the main branch, the unit test in tests/*.py runs automatically. All tests should pass.
+To view this data follow https://github.com/MegCheppy/travia to visualize the data, as a video, together with the features extracted from the data.
 
 
-After Completing this Challenge, you would have explore  
+## To create the warehouse techstack,steps followed;
+- Create a DAG-(A DAG is basically a code that does a specific task) in Airflow that uses the bash/python operator to load the data files into your database. Think about a useful separation of Prod, Dev and Staging
+3- Connect dbt with your DWH and write transformations codes for the data you can execute via the Bash or Python operator in Airflow. Write proper documentation for your data models and access the dbt docs UI for presentation. 
+- Check additional modules of dbt that can support you with data quality monitoring (e.g. great_expectations, dbt_expectations or re-data). 
+- Connect the reporting environment and create a dashboard out of this data
 
-- Unittesting
-- Modular Coding
-- Software Engineering Best Practices
-- Python Package Structure
-- Bug Fix (Debugging)
 
-Have Fun and Cheers
+
+Knowledge:
+Enterprise-grade data engineering - using Apache and Databricks tools
+
+Skills:
+Create and maintain Airflow DAGs
+Work with Apache Airflow, dbt, redash  and a DWH
+Apply ELT techniques to DWH
+Build data pipelines and orchestration workflows
+
+
