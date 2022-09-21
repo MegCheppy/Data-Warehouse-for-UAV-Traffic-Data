@@ -1,7 +1,9 @@
 # Data Warehouse for UAV Traffic Data
-Data is like the new oil, it keeps growing and the demand for it is also growing. Machine learning and AI need more data to improve their accuracy. Quality of data and amount of data are essential to creating ai project, hence it's essential to focus on the data structures to store these data. It's like creating a home for your massive data.
+Data is like the new oil, it keeps growing and the demand for it is also growing. Machine learning and AI need more data to improve their accuracy. Quality of data and amount of data are essential to creating ai project, hence it's essential to focus on the data structures to store these data. It's like creating a home for your massive data. Most of cloud data warehouses exist, but how much will they charge you? Especially with the large size of drone data. Hence this application shows you how to access this service for free.99!
 
 For this project, we focus on creating a data warehouse specifically for traffic data collected from drones by Pneuma.(https://open-traffic.epfl.ch/index.php/downloads/#1599047632450-ebe509c8-1330). The data downloaded is a CSV file. Every data instance; i.e one location, in a specific date, at a 30min interval, is approximately 
+
+
 
 To view this data follow https://github.com/MegCheppy/travia to visualize the data, as a video, together with the features extracted from the data.
 
