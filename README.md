@@ -7,6 +7,9 @@ For this project, we focus on creating a data warehouse specifically for traffic
 
 To view this data follow https://github.com/MegCheppy/travia to visualize the data, as a video, together with the features extracted from the data.
 
+![image](https://user-images.githubusercontent.com/88152028/210540850-2d49de36-0b9d-4bfb-b854-22f92eda7bb4.png)
+
+
 
 ## To create the warehouse techstack,steps followed;
 - Create a DAG-(A DAG is basically a code that does a specific task) in Airflow that uses the bash/python operator to load the data files into your database. Think about a useful separation of Prod, Dev and Staging
