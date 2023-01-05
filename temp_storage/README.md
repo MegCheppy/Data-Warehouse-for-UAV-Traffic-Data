@@ -1,0 +1,1 @@
+A directory used as a sink for temporarily processed files. Airflow will consume files from this directory.
